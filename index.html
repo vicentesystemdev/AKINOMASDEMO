@@ -24,18 +24,19 @@
 
     <section id="main-view" class="main-view hidden">
       <aside class="sidebar">
-        <div>
+        <div class="brand-block">
           <h2>AKI NO MASS</h2>
-          <small>Gestión Comercial</small>
+          <small>CRM Comercial Multicanal</small>
         </div>
         <nav id="menu">
-          <button data-view="dashboard" class="menu-item active">📊 Dashboard</button>
+          <button data-view="dashboard" class="menu-item active">🏢 Dashboard</button>
           <button data-view="clientes" class="menu-item">👥 Clientes</button>
-          <button data-view="productos" class="menu-item">🧥 Productos</button>
+          <button data-view="productos" class="menu-item">🧵 Productos</button>
           <button data-view="pedidos" class="menu-item">🧾 Pedidos</button>
-          <button data-view="canales" class="menu-item">📱 Canales</button>
           <button data-view="seguimiento" class="menu-item">🎯 Seguimiento</button>
+          <button data-view="canales" class="menu-item">📡 Canales</button>
           <button data-view="reportes" class="menu-item">📈 Reportes</button>
+          <button data-view="actividad" class="menu-item">🕘 Actividad reciente</button>
           <button data-view="configuracion" class="menu-item">⚙️ Configuración</button>
         </nav>
         <button id="logout" class="logout">Cerrar sesión</button>
@@ -47,7 +48,13 @@
             <h1 id="view-title">Dashboard</h1>
             <p>Sistema de Gestión Comercial Multicanal</p>
           </div>
-          <div class="demo-pill">Modo Demo Activo</div>
+          <div class="topbar-meta">
+            <div class="user-chip">
+              <span>👤</span>
+              <strong id="topbar-user">demo@akinomass.com</strong>
+            </div>
+            <div class="demo-pill" id="topbar-demo-mode">Modo demo</div>
+          </div>
         </header>
 
         <section id="view-container"></section>
